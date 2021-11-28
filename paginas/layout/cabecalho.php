@@ -16,7 +16,7 @@
                         <a class="nav-link active" href="paginas/categoria.php">Categoria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="paginas/motoboy/motoboy.php">Motoboy</a>
+                        <a class="nav-link active" href="./app/CRUD/CRUD_MOTOBOY/index.php">Motoboy</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#4">Culinária</a>

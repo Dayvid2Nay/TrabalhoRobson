@@ -12,7 +12,8 @@ $telefone = $_POST["telefone"];
 
 $bd->editarMotoboy($id,$nome, $cpf, $telefone);
 
-echo"<h1>Motoboy Alterado com sucesso!</h1>";
-echo"<a href=\"index.php\">Voltar.</a><br>";
+echo '<script> alert ("Motoboy Alterado com sucesso!!!"); location.href=("./index.php")</script>';
+//echo"<h1>Motoboy Alterado com sucesso!</h1>";
+//echo"<a href=\"index.php\">Voltar.</a><br>";
 
 ?>

@@ -94,7 +94,9 @@
                 </div>
             </form>
         </div>
-    </main><
+    </main>
+
+    
         
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery.js"></script>

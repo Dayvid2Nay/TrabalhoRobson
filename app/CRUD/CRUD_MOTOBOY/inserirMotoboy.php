@@ -10,7 +10,7 @@ $telefone = $_POST["telefone"];
         
 $bd->inserirMotoboy($nome, $cpf, $telefone);
 
-echo '<script> alert ("Motoboy cadastrado com sucesso!!!"); location.href=("../../../paginas/motoboy/motoboy.php")</script>';
+echo '<script> alert ("Motoboy cadastrado com sucesso!!!"); location.href=("./index.php")</script>';
 //echo "<script type='javascript'>alert('Motoboy cadastrado com sucesso!!')";
 //echo"<a href=\"index.php\">Voltar.</a><br>";
 
