@@ -23,6 +23,14 @@ class Bd extends PDO{
         return $stmt->fetchALL(PDO::FETCH_ASSOC);
     }
 
+    public function buscarUsuarioEmail($email){
+        $stmt = $this->conn->prepare("SELECT * FROM Usuarios WHERE email=:EMAIL");
+        $stmt->bindParam(":EMAIL",$email);
+        $stmt->execute();
+
+        return $stmt->fetchALL(PDO::FETCH_ASSOC);
+    }
+
 
     public function inserirUsuario($nome, $email, $senha, $tipo){
         $stmt = $this->conn->prepare("INSERT INTO Usuarios(nome, email, senha, tipo) VALUES (:NOME, :EMAIL, :SENHA, :TIPO)");
