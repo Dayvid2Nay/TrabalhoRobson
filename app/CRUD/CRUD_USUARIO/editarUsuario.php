@@ -8,10 +8,13 @@ $id = $_POST["id"];
 $nome = $_POST["nome"];
 $email = $_POST["email"];
 $senha = $_POST["senha"];
-$tipo = $_POST["tipo"];
+$endereco =$_POST["endereco"];
+$cpf =$_POST["cpf"];
+$telefone =$_POST["telefone"];
+$tipo =$_POST["tipo"];
 
 
-$bd->editarUsuario($id,$nome, $email, $senha, $tipo);
+$bd->editarUsuario($id,$nome, $email, $senha, $endereco, $cpf, $telefone, $tipo);
 
 echo"<h1>Usuario Alterado com sucesso!</h1>";
 echo"<a href=\"index.php\">Voltar.</a><br>";

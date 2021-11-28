@@ -4,7 +4,7 @@ class Bd extends PDO{
     private $coon;
 
     public function __construct(){
-        $this->conn = new PDO("mysql:dbname=pizzaria;host=localhost","root","123456789");
+        $this->conn = new PDO("mysql:dbname=pizzaria;host=localhost","root","");
     }
 
     public function buscarProdutos(){
