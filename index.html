@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#1">Notícias</a>
+                        <a class="nav-link active" href="#1">Usuário</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#2">Esportes</a>
@@ -43,362 +43,47 @@
             </div>
         </div>
     </nav>
+
+
     <main>
-        <section id="1">
-            <div class="categoria full">
-                <h3>Notícias</h3>
-                <div class="conteudo">
-                    <div class="card">
-                        <a href="https://www.tediado.com.br/10/22-fenomenos-naturais-quantas-voce-ja-presenciou"><img src="./img/noti-img1.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.tediado.com.br/10/22-fenomenos-naturais-quantas-voce-ja-presenciou">
-                                <p>22 fenômenos naturais, quantas você já presenciou?</p>
-                            </a>
+        <div class="container">
+            <h1 class="text-center">Cadastro de Motoboy</h1>
+            <form action="" method="post">
+                <input type="hidden" name="id" value="">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-md-4">
+                        <div class="form-group">
+                            <label for="nomeCompleto">Nome Completo:*</label>
+                            <input type="text" class="form-control" name="nome" id="nomeCompleto"
+                                placeholder="Nome Completo" value="" required>
                         </div>
                     </div>
-                    <div class="card">
-                        <a href="https://www.belohorizonte.com.br/vai-ter-samba-realiza-a-ultima-edicao-neste-sabado/"><img src="./img/noti-img2.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.belohorizonte.com.br/vai-ter-samba-realiza-a-ultima-edicao-neste-sabado/">
-                                <p>Vai Ter Samba realiza a última edição neste sábado</p>
-                            </a>
+                    <div class="col-12 col-md-3">
+                        <div class="form-group">
+                            <label for="cpf">CPF:*</label>
+                            <input type="text" value="" class="form-control" name="cpf"
+                                id="cpf" placeholder="CPF" required>
+                        </div>
+                    </div>   
+                    <div class="col-12 col-md-3">
+                        <div class="form-group">
+                            <label for="celular">Celular:*</label>
+                            <input type="text" value="" class="form-control"
+                                name="celular" id="celular" placeholder="(00) 0 0000-0000" required>
                         </div>
                     </div>
-                    <div class="card">
-                        <a href="https://www.dicasbh.com.br/veja-como-foi-o-1o-savassi-fashion-web/"><img src="./img/noti-img3.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.dicasbh.com.br/veja-como-foi-o-1o-savassi-fashion-web/">
-                                <p>Veja como foi o 1º Savassi Fashion Web</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="categoria short" id="noticias">
-                <h3>Notícias</h3>
-                <div class="conteudo">
-                    <div class="card noticia1">
-                        <a href="https://www.tediado.com.br/10/22-fenomenos-naturais-quantas-voce-ja-presenciou"><img src="./img/noti-img1.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.tediado.com.br/10/22-fenomenos-naturais-quantas-voce-ja-presenciou">
-                                <p>22 fenômenos naturais, quantas você já presenciou?</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card noticia2">
-                        <a href="https://www.belohorizonte.com.br/vai-ter-samba-realiza-a-ultima-edicao-neste-sabado/"><img src="./img/noti-img2.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.belohorizonte.com.br/vai-ter-samba-realiza-a-ultima-edicao-neste-sabado/">
-                                <p>Vai Ter Samba realiza a última edição neste sábado</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card noticia3">
-                        <a href="https://www.dicasbh.com.br/veja-como-foi-o-1o-savassi-fashion-web/"><img src="./img/noti-img3.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.dicasbh.com.br/veja-como-foi-o-1o-savassi-fashion-web/">
-                                <p>Veja como foi o 1º Savassi Fashion Web</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="slider-controls">
-                        <div class="arrow" id="left-arrow">
-                            <h6>
-                                < </h6>
-                        </div>
-                        <div class="arrow" id="right-arrow">
-                            <h6> > </h6>
-                        </div>
+                    <div class="col-12 col-md-3 p-5" style="float: right;">
+                         <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="2">
-            <div class="categoria full">
-                <h3>Esportes</h3>
-                <div class="conteudo">
-                    <div class="card">
-                        <a href="https://vemnamao.com/14563-2/"><img src="./img/espor_img1.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://vemnamao.com/14563-2/">
-                                <p>O icônico ex-árbitro do UFC Mario Yamazaki considera a aposentadoria do MMA</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://vemnamao.com/edson-barboza-relembra-suas-emocoes-no-ufc-rio-1-ha-dez-anos-da-vontade-de-chorar/"><img src="./img/espor_img2.jpg" alt="noticia2"></a>
-                        <div class="container texto">
-                            <a href="https://vemnamao.com/edson-barboza-relembra-suas-emocoes-no-ufc-rio-1-ha-dez-anos-da-vontade-de-chorar/">
-                                <p>Edson Barboza relembra suas emoções no UFC Rio 1 há dez anos: “Dá vontade de chorar”</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://vemnamao.com/dana-white-que-foi-preso-por-jon-jones-disse-este-incidente-nem-me-choca-mais/"><img src="./img/espor_img3.jpg" alt="noticia2"></a>
-                        <div class="container texto">
-                            <a href="https://vemnamao.com/dana-white-que-foi-preso-por-jon-jones-disse-este-incidente-nem-me-choca-mais/">
-                                <p>Dana White, que foi preso por Jon Jones</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="categoria short" id="esporte">
-                <h3>Esportes</h3>
-                <div class="conteudo">
-                    <div class="card noticia1">
-                        <a href="https://vemnamao.com/14563-2/"><img src="./img/espor_img1.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://vemnamao.com/14563-2/">
-                                <p>O icônico ex-árbitro do UFC Mario Yamazaki considera a aposentadoria do MMA</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card noticia2">
-                        <a href="https://vemnamao.com/edson-barboza-relembra-suas-emocoes-no-ufc-rio-1-ha-dez-anos-da-vontade-de-chorar/"><img src="./img/espor_img2.jpg" alt="noticia2"></a>
-                        <div class="container texto">
-                            <a href="https://vemnamao.com/edson-barboza-relembra-suas-emocoes-no-ufc-rio-1-ha-dez-anos-da-vontade-de-chorar/">
-                                <p>Edson Barboza relembra suas emoções no UFC Rio 1 há dez anos: “Dá vontade de chorar”</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card noticia3">
-                        <a href="https://vemnamao.com/dana-white-que-foi-preso-por-jon-jones-disse-este-incidente-nem-me-choca-mais/"><img src="./img/espor_img3.jpg" alt="noticia2"></a>
-                        <div class="container texto">
-                            <a href="https://vemnamao.com/dana-white-que-foi-preso-por-jon-jones-disse-este-incidente-nem-me-choca-mais/">
-                                <p>Dana White, que foi preso por Jon Jones, disse: “Este incidente nem me choca mais.”</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="slider-controls">
-                        <div class="arrow" id="left-arrow1">
-                            <h6>
-                                < </h6>
-                        </div>
-                        <div class="arrow" id="right-arrow1">
-                            <h6> > </h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="3">
-            <div class="categoria full">
-                <h3>Jogos</h3>
-                <div class="conteudo">
-                    <div class="card">
-                        <a href="https://nerdlicious.com.br/2021/09/jogamos-o-divertido-super-animal-royale-no-nintendo-switch-confira/">
-                            <p><img src="./img/jogo-img1.jpg" alt="noticia1"></p>
-                        </a>
-                        <div class="container texto">
-                            <a href="https://nerdlicious.com.br/2021/09/jogamos-o-divertido-super-animal-royale-no-nintendo-switch-confira/">
-                                <p>Jogamos o divertido Super Animal Royale no Nintendo Switch</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://nerdlicious.com.br/2021/08/psychonauts-2-e-bom-mesmo-confira-nossa-analise-e-gameplay/"><img src="./img/jogo-img2.jpg" alt="noticia2"></a>
-                        <div class="container texto">
-                            <a href="https://nerdlicious.com.br/2021/08/psychonauts-2-e-bom-mesmo-confira-nossa-analise-e-gameplay/">
-                                <p>Psychonauts 2 é bom mesmo! Confira nossa análise e gameplay!</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://nerdlicious.com.br/2021/08/jogamos-o-excelente-star-renegades-confira-nossa-analise-e-gameplay/"><img src="./img/jogo-img3.jpg" alt="noticia2"></a>
-                        <div class="container texto">
-                            <a href="https://nerdlicious.com.br/2021/08/jogamos-o-excelente-star-renegades-confira-nossa-analise-e-gameplay/">
-                                <p>Jogamos o excelente Star Renegades. Confira nossa análise e gameplay!</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="categoria short" id="jogos">
-                <h3>Jogos</h3>
-                <div class="conteudo">
-                    <div class="card noticia1">
-                        <a href="https://nerdlicious.com.br/2021/09/jogamos-o-divertido-super-animal-royale-no-nintendo-switch-confira/">
-                            <p><img src="./img/jogo-img1.jpg" alt="noticia1"></p>
-                        </a>
-                        <div class="container texto">
-                            <a href="https://nerdlicious.com.br/2021/09/jogamos-o-divertido-super-animal-royale-no-nintendo-switch-confira/">
-                                <p>Jogamos o divertido Super Animal Royale no Nintendo Switch</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card noticia2">
-                        <a href="https://nerdlicious.com.br/2021/08/psychonauts-2-e-bom-mesmo-confira-nossa-analise-e-gameplay/"><img src="./img/jogo-img2.jpg" alt="noticia2"></a>
-                        <div class="container texto">
-                            <a href="https://nerdlicious.com.br/2021/08/psychonauts-2-e-bom-mesmo-confira-nossa-analise-e-gameplay/">
-                                <p>Psychonauts 2 é bom mesmo! Confira nossa análise e gameplay!</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card noticia3">
-                        <a href="https://nerdlicious.com.br/2021/08/jogamos-o-excelente-star-renegades-confira-nossa-analise-e-gameplay/"><img src="./img/jogo-img3.jpg" alt="noticia2"></a>
-                        <div class="container texto">
-                            <a href="https://nerdlicious.com.br/2021/08/jogamos-o-excelente-star-renegades-confira-nossa-analise-e-gameplay/">
-                                <p>Jogamos o excelente Star Renegades. Confira nossa análise e gameplay!</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="slider-controls">
-                        <div class="arrow" id="left-arrow2">
-                            <h6>
-                                < </h6>
-                        </div>
-                        <div class="arrow" id="right-arrow2">
-                            <h6> > </h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="4">
-            <div class="categoria full">
-                <h3>Culinária</h3>
-                <div class="conteudo">
-                    <div class="card">
-                        <a href="https://www.receitasedoces.com.br/2021/09/receitas-faceis-e-rapidas-doces-gourmet.html"><img src="./img/culin-img1.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.receitasedoces.com.br/2021/09/receitas-faceis-e-rapidas-doces-gourmet.html">
-                                <p>5 receitas fáceis e rápidas de doces gourmet para fazer em casa</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://www.tediado.com.br/09/37-combinacoes-estranhas-de-alimentos-que-algumas-pessoas-juram-que-sao-boas"><img src="./img/culin-img2.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.tediado.com.br/09/37-combinacoes-estranhas-de-alimentos-que-algumas-pessoas-juram-que-sao-boas">
-                                <p>37 combinações estranhas de alimentos que algumas pessoas juram que são boas</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://sweetfluffy.com/2021/09/20/saladas-de-frutas-para-amantes-de-personagens-da-disney/"><img src="./img/culin-img3.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://sweetfluffy.com/2021/09/20/saladas-de-frutas-para-amantes-de-personagens-da-disney/">
-                                <p>Saladas de frutas para amantes de personagens da Disney</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="categoria short" id="culinaria">
-                <h3>Culinária</h3>
-                <div class="conteudo">
-                    <div class="card noticia1">
-                        <a href="https://www.receitasedoces.com.br/2021/09/receitas-faceis-e-rapidas-doces-gourmet.html"><img src="./img/culin-img1.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.receitasedoces.com.br/2021/09/receitas-faceis-e-rapidas-doces-gourmet.html">
-                                <p>5 receitas fáceis e rápidas de doces gourmet para fazer em casa</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card noticia2">
-                        <a href="https://www.tediado.com.br/09/37-combinacoes-estranhas-de-alimentos-que-algumas-pessoas-juram-que-sao-boas"><img src="./img/culin-img2.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.tediado.com.br/09/37-combinacoes-estranhas-de-alimentos-que-algumas-pessoas-juram-que-sao-boas">
-                                <p>37 combinações estranhas de alimentos que algumas pessoas juram que são boas</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card noticia3">
-                        <a href="https://sweetfluffy.com/2021/09/20/saladas-de-frutas-para-amantes-de-personagens-da-disney/"><img src="./img/culin-img3.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://sweetfluffy.com/2021/09/20/saladas-de-frutas-para-amantes-de-personagens-da-disney/">
-                                <p>Saladas de frutas para amantes de personagens da Disney</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="slider-controls">
-                        <div class="arrow" id="left-arrow3">
-                            <h6>
-                                < </h6>
-                        </div>
-                        <div class="arrow" id="right-arrow3">
-                            <h6> > </h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="5">
-            <div class="categoria full">
-                <h3>Humor</h3>
-                <div class="conteudo">
-                    <div class="card">
-                        <a href="https://www.arreganho.com.br/os-melhores-memes-da-semana-12"><img src="./img/humo-img1.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.arreganho.com.br/os-melhores-memes-da-semana-12">
-                                <p>Minha vida resumida em 4 imagens...</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://aziume.com/2021/10/01/super-sincero/"><img src="./img/humo-img2.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://aziume.com/2021/10/01/super-sincero/">
-                                <p>Super sincero</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://www.naointendo.com.br/posts/galhqh3kkkw-conselho-valido"><img src="./img/humo-img3.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.naointendo.com.br/posts/galhqh3kkkw-conselho-valido">
-                                <p>Aquele conselho super válido</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="categoria short" id="humor">
-                <h3>Humor</h3>
-                <div class="conteudo">
-                    <div class="card noticia1">
-                        <a href="https://www.arreganho.com.br/os-melhores-memes-da-semana-12"><img src="./img/humo-img1.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.arreganho.com.br/os-melhores-memes-da-semana-12">
-                                <p>Minha vida resumida em 4 imagens...</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card noticia2">
-                        <a href="https://aziume.com/2021/10/01/super-sincero/"><img src="./img/humo-img2.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://aziume.com/2021/10/01/super-sincero/">
-                                <p>Super sincero</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card noticia3">
-                        <a href="https://www.naointendo.com.br/posts/galhqh3kkkw-conselho-valido"><img src="./img/humo-img3.jpg" alt="noticia1"></a>
-                        <div class="container texto">
-                            <a href="https://www.naointendo.com.br/posts/galhqh3kkkw-conselho-valido">
-                                <p>Aquele conselho super válido</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="slider-controls">
-                        <div class="arrow" id="left-arrow4">
-                            <h6>
-                                < </h6>
-                        </div>
-                        <div class="arrow" id="right-arrow4">
-                            <h6> > </h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section></section>
+            </form>
+        </div>
     </main>
+
     <div class="footer">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#1" class="nav-link px-2 text-white">Notícias</a></li>
+                <li class="nav-item"><a href="#1" class="nav-link px-2 text-white">Usuário</a></li>
                 <li class="nav-item"><a href="#2" class="nav-link px-2 text-white">Esportes</a></li>
                 <li class="nav-item"><a href="#3" class="nav-link px-2 text-white">Jogos</a></li>
                 <li class="nav-item"><a href="#4" class="nav-link px-2 text-white">Culinária</a></li>
