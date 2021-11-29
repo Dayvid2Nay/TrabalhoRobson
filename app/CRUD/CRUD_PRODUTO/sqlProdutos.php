@@ -22,14 +22,14 @@ class Bd extends PDO{
         return $stmt->fetchALL(PDO::FETCH_ASSOC);
     }
 
-    public function inserirProduto($quantidade, $descricao, $preco/*,$nome*/){
-        $stmt = $this->conn->prepare("INSERT INTO Produtos(quantidade, descricao, preco) VALUES (:QUANTIDADE, :DESCRICAO, :PRECO)");
+    public function inserirProduto($quantidade, $descricao, $preco,$nome){
+        $stmt = $this->conn->prepare("INSERT INTO Produtos(quantidade, descricao, preco,nome) VALUES (:QUANTIDADE, :DESCRICAO, :PRECO,:NOME)");
         //$stmt = $this->conn->prepare("INSERT into categoria(nome) values(:NOME)");
 
         $stmt->bindParam(":QUANTIDADE",$quantidade);
         $stmt->bindParam(":DESCRICAO",$descricao);
         $stmt->bindParam(":PRECO",$preco);
-        //$stmt->bindParam(":NOME",$nome);
+        $stmt->bindParam(":NOME",$nome);
 
         $stmt->execute();
     }
@@ -40,13 +40,14 @@ class Bd extends PDO{
         $stmt->execute();
 
     }
-    public function editarProduto($id,$quantidade, $descricao, $preco){
-        $stmt = $this->conn->prepare("UPDATE Produtos SET quantidade=:QUANTIDADE , descricao = :DESCRICAO, preco = :PRECO WHERE idproduto = :ID");
+    public function editarProduto($id,$quantidade, $descricao, $preco,$nome){
+        $stmt = $this->conn->prepare("UPDATE Produtos SET quantidade=:QUANTIDADE , descricao = :DESCRICAO, preco = :PRECO, nome = :NOME WHERE idproduto = :ID");
 
         $stmt->bindParam(":ID",$id);
         $stmt->bindParam(":QUANTIDADE",$quantidade);
         $stmt->bindParam(":DESCRICAO",$descricao);
         $stmt->bindParam(":PRECO",$preco);
+        $stmt->bindParam(":NOME",$nome);
 
         $stmt->execute();
     }
