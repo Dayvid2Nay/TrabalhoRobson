@@ -4,18 +4,7 @@ require_once("sqlProdutos.php");
 $bd = new Bd();
 
 $produtos = $bd->buscarProdutos();
-
-
-foreach ($produtos as $row){
-    foreach($row as $key => $value){
-
-        if($key=="idProduto")$idProduto=$value;
-
-        echo"<h1>$key:$value</h1>";
-    }
-    echo"<a href=\"produto.php?id=$idProduto\">Ver Produto</a><br>";
-    echo"======================";
-}
+ 
 
 ?>
 <!DOCTYPE html>
@@ -40,9 +29,9 @@ include('./../../../paginas/layout/cabecalho.php');
             <table class="table table-striped">
                 <thead>
                     <tr>
+                        <th scope="col">Nome</th>
                         <th scope="col">Descrição</th>
                         <th scope="col">Quantidade</th>
-                        <th scope="col">Descrição</th>
                         <th scope="col">Preço</th>
                         <th scope="col">Ações</th>
                     </tr>
@@ -51,16 +40,18 @@ include('./../../../paginas/layout/cabecalho.php');
                     <?php
                     foreach ($produtos as $key){
                          $idProduto=$key["idProduto"];
+                         $nome=$key["nome"];
                          $quantidade=$key["quantidade"];
                          $descricao=$key["descricao"];
                          $preco=$key["preco"];
 
                          echo"<tr>";
+                         echo" <td scope='row'>$nome</td>";
                          echo" <td scope='row'>$descricao</td>";
                          echo" <td scope='row'>$quantidade</td>";
                          echo" <td scope='row'>$preco</td>";
-                         echo" <td scope='row'><a href=\"motoboy.php?id=$idProduto\">Ver Motoboy</a><br>
-                         <a href=\"excluirMotoboy.php?id=$idProduto\">Excluir</a><br></td>";
+                         echo" <td scope='row'><a href=\"produto.php?id=$idProduto\">Ver Produto</a><br>
+                         <a href=\"excluirProdutos.php?id=$idProduto\">Excluir</a><br></td>";
 
                          echo"</tr>";
                     

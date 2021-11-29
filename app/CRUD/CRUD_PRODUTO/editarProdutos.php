@@ -8,9 +8,11 @@ $id = $_POST["id"];
 $quantidade = $_POST["quantidade"];
 $descricao = $_POST["descricao"];
 $preco = $_POST["preco"];
+$nome = $_POST["nome"];
 
-$bd->editarProduto($id,$quantidade,$descricao,$preco);
+$bd->editarProduto($id,$quantidade,$descricao,$preco,$nome);
 
-echo"<h1>Produto Alterado com sucesso!</h1>"
+echo '<script> alert ("Produto Alterado com sucesso!!!"); location.href=("./index.php")</script>';
+//echo"<h1>Produto Alterado com sucesso!</h1>"
 
 ?>
