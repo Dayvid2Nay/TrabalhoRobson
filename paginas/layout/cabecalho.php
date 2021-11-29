@@ -22,7 +22,7 @@
                         <a class="nav-link active" href="./app/CRUD/CRUD_PRODUTO/index.php">Produto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#5">Humor</a>
+                        <a class="nav-link active" href="./app/CRUD/CRUD_USUARIO/index.php">Usuario</a>
                     </li>
                 </ul>
             </div>

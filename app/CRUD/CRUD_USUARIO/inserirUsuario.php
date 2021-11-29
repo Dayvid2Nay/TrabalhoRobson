@@ -15,8 +15,9 @@ $tipo =$_POST["tipo"];
         
 $bd->inserirUsuario($nome,$email,$senha,$endereco, $cpf, $telefone, $tipo);
 
-echo"<h1>Usuario cadastrado com sucesso!</h1><br>";
-echo"<a href=\"index.php\">Voltar.</a><br>";
+echo '<script> alert ("Usuario cadastrado com sucesso!!!"); location.href=("./index.php")</script>';
+//echo"<h1>Usuario cadastrado com sucesso!</h1><br>";
+//echo"<a href=\"index.php\">Voltar.</a><br>";
 
 ?>
 

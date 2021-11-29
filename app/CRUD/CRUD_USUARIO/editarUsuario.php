@@ -16,7 +16,8 @@ $tipo =$_POST["tipo"];
 
 $bd->editarUsuario($id,$nome, $email, $senha, $endereco, $cpf, $telefone, $tipo);
 
-echo"<h1>Usuario Alterado com sucesso!</h1>";
-echo"<a href=\"index.php\">Voltar.</a><br>";
+echo '<script> alert (">Usuario Alterado com sucesso!!!"); location.href=("./index.php")</script>';
+//echo"<h1>Usuario Alterado com sucesso!</h1>";
+//echo"<a href=\"index.php\">Voltar.</a><br>";
 
 ?>

@@ -7,6 +7,7 @@ $bd = new Bd();
 
 $bd->excluirUsuario($id);
 
-echo("Usuario excluido!<br>");
-echo"<a href=\"index.php\">Voltar.</a><br>";
+echo '<script> alert ("Usuario excluido!!!"); location.href=("./index.php")</script>';
+//echo("Usuario excluido!<br>");
+//echo"<a href=\"index.php\">Voltar.</a><br>";
 ?>
