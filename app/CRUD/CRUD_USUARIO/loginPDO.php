@@ -57,13 +57,14 @@ include('./../../../paginas/layout/cabecalho.php');
 							if ($verifica==false){
 								echo '<script> alert ("Usuario/Senha Incorretos!!!");</script>';
 							} else {
-                                echo '<script> alert ("Logado com sucesso!!!");</script>';
+                                
                                 foreach ($verifica as $key){
                                     $idPessoa=$key["idPessoa"];
                                     $nome=$key["nome"];
                                 }
 								$_SESSION['nome'] = $nome;
 								$_SESSION['idUsuario'] = $idPessoa;
+                                echo '<script> alert ("Logado com sucesso!!!");location.href=("./loginPDO.php")</script></script>';
 							}
 						}
 						?>
