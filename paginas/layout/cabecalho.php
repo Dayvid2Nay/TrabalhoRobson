@@ -24,6 +24,27 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="./app/CRUD/CRUD_USUARIO/index.php">Usuario</a>
                     </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link active" href="
+                    <?php
+                        if(isset($_SESSION['nome'])){
+                            echo "../CRUD_USUARIO/logout.php";
+                        
+                        }else{
+                            echo "./app/CRUD/CRUD_USUARIO/loginPDO.php";
+                        }
+                    ?>
+                    "
+                    <?php
+                        if(isset($_SESSION['nome'])){
+                        echo ">Logout";
+                        }else{
+                        echo ">Login";
+                        }
+                    ?>
+                    </a>
+                    </li>
                 </ul>
             </div>
         </div>

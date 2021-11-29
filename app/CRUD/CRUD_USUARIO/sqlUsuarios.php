@@ -1,7 +1,7 @@
 <?php 
 
 class Bd extends PDO{
-    private $coon;
+    private $conn;
 
     public function __construct(){
         $this->conn = new PDO("mysql:dbname=pizzaria;host=localhost","root","");
@@ -15,6 +15,17 @@ class Bd extends PDO{
         return $stmt->fetchALL(PDO::FETCH_ASSOC);
     }
 
+    public function login($loginEmail,$loginPassword){
+		$stmt = $this->conn->prepare( "SELECT * FROM usuarios where email='$loginEmail' AND senha='$loginPassword' ");
+		$stmt->execute();
+        if ($stmt->rowCount() == 1){
+            return $stmt->fetchALL(PDO::FETCH_ASSOC);
+        } else {
+            return false;
+    }
+       
+    }
+
     public function buscarUsuario($id){
         $stmt = $this->conn->prepare("SELECT * FROM Usuarios WHERE idPessoa=:ID");
         $stmt->bindParam(":ID",$id);
@@ -23,8 +34,8 @@ class Bd extends PDO{
         return $stmt->fetchALL(PDO::FETCH_ASSOC);
     }
 
-    public function login($email){
-        $stmt = $this->conn->prepare("SELECT idPessoa ,email, senha FROM Usuarios WHERE email=:EMAIL");
+    public function buscarUsuarioEmail($email){
+        $stmt = $this->conn->prepare("SELECT * FROM Usuarios WHERE email=:EMAIL");
         $stmt->bindParam(":EMAIL",$email);
         $stmt->execute();
 
@@ -53,11 +64,7 @@ class Bd extends PDO{
         $stmt->execute();
 
     }
-<<<<<<< HEAD
     public function editarUsuario($id,$nome, $email, $senha, $endereco, $cpf, $telefone, $tipo){
-=======
-    public function editarUsuario($id, $nome, $email, $senha, $endereco, $cpf, $telefone, $tipo){
->>>>>>> 9d8fc0a3bc347f5562f7b0adb5500d8eaa1ca1df
         $stmt = $this->conn->prepare("UPDATE Usuarios SET nome=:NOME , email = :EMAIL, senha = :SENHA, endereco = :ENDERECO, cpf= :CPF, telefone= :TELEFONE, tipo =:TIPO WHERE idPessoa = :ID");
 
         $stmt->bindParam(":ID",$id);
